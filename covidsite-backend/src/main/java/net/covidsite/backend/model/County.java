@@ -26,6 +26,38 @@ public class County {
 	
 	@Column(name = "total_deaths")
 	private long totalDeaths;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getCountyName() {
+		return countyName;
+	}
+
+	public void setCountyName(String countyName) {
+		this.countyName = countyName;
+	}
+
+	public long getTotalCases() {
+		return totalCases;
+	}
+
+	public void setTotalCases(long totalCases) {
+		this.totalCases = totalCases;
+	}
+
+	public long getTotalDeaths() {
+		return totalDeaths;
+	}
+
+	public void setTotalDeaths(long totalDeaths) {
+		this.totalDeaths = totalDeaths;
+	}
 	
 	
 	
