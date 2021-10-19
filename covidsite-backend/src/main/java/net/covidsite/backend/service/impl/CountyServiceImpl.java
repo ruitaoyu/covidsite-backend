@@ -1,5 +1,7 @@
 package net.covidsite.backend.service.impl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import net.covidsite.backend.model.County;
@@ -19,6 +21,11 @@ public class CountyServiceImpl implements CountyService{
 	@Override
 	public County saveCounty(County county) {
 		return countyRepository.save(county);
+	}
+
+	@Override
+	public List<County> getAllCounties() {
+		return countyRepository.findAll();
 	}
 
 }
